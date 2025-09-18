@@ -26,7 +26,7 @@ export default function Home() {
       </Link>
       <Link
         className="bg-red-500 text-center rounded-3xl font-bold pt-3 w-[100px] h-[60px]"
-        href="/randomQuote"
+        href="/randomQuotes"
       >
         Random Quote
       </Link>

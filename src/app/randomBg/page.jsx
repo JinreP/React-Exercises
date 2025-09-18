@@ -24,7 +24,12 @@ export default function RandomBg() {
       className="bg-black w-full h-screen flex flex-col justify-center items-center"
       style={{ backgroundColor: color }}
     >
-      <Link href="/">Home</Link>
+      <Link
+        className="bg-red-500 text-center text-6xl font-bold rounded-3xl w-[200px] h-[100px]"
+        href="/"
+      >
+        Home
+      </Link>
       <div className="bg-gray-500 w-[500px] h-[300px] text-5xl text-center pt-20">
         Current color is {color}
       </div>

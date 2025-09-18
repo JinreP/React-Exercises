@@ -24,7 +24,12 @@ export default function Login() {
   }
   return (
     <div className="w-full h-screen bg-black flex flex-col justify-center items-center">
-      <Link href="/">Home</Link>
+      <Link
+        className="bg-red-500 text-center text-6xl font-bold rounded-3xl w-[200px] h-[100px]"
+        href="/"
+      >
+        Home
+      </Link>
       <div className="w-[400px] h-[500px] border-4 border-red-500 flex flex-col">
         <div className="flex flex-col items-center pt-30 gap-5 w-full h-screen">
           <input

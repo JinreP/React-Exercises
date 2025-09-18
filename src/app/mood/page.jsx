@@ -29,7 +29,12 @@ export default function Mood() {
 
   return (
     <div className="bg-black w-full h-screen flex flex-col justify-center items-center">
-      <Link href="/">Home</Link>
+      <Link
+        className="bg-red-500 text-center text-6xl font-bold rounded-3xl w-[200px] h-[100px]"
+        href="/"
+      >
+        Home
+      </Link>
       <div className="bg-gray-500 w-[500px] h-[300px] text-9xl text-center pt-20">
         {mood}
       </div>

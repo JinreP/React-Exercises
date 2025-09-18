@@ -22,7 +22,12 @@ export default function RandomQuotes() {
   };
   return (
     <div className="flex flex-col justify-center items-center w-full h-screen bg-gray-400">
-      <Link href="/">Home</Link>
+      <Link
+        className="bg-red-500 text-center text-6xl font-bold rounded-3xl w-[200px] h-[100px]"
+        href="/"
+      >
+        Home
+      </Link>
       <div className="bg-black w-[500px] h-[200px] border-4 border-red-600 flex flex-col items-center justify-center mb-5">
         <p className="text-4xl font-black text-red-500 text-center">
           {currentQuote}
