@@ -3,26 +3,26 @@
 import { useState } from "react";
 
 export default function DarkLightMode() {
-  const [likes, setLikes] = useState(0);
-  const liked = () => {
-    setLikes(liked + 1);
+  const [darkMode, setDarkMode] = useState(false);
+
+  const darkmode = () => {
+    setDarkMode(true);
   };
-  const dislike = () => {
-    setLikes(liked - 1);
+  const lightmode = () => {
+    setDarkMode(false);
+  };
+
+  const changeTheme = () => {
+    darkmode();
+    lightmode();
   };
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen" style={{ backgroundColor: darkMode ? "black" : "white" }}>
       <button
-        onClick={() => liked()}
-        className="bg-emerald-500 w-[100px] h-[50px] text-5xl"
+        onClick={() => setDarkMode(!darkMode)}
+        className="bg-emerald-500 w-[100px] h-[50px]"
       >
-        👍
-      </button>
-      <button
-        onClick={() => dislike()}
-        className="bg-emerald-500 w-[100px] h-[50px] text-5xl"
-      >
-        👎
+        Change color
       </button>
     </div>
   );
